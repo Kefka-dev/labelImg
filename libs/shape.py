@@ -34,9 +34,9 @@ class Shape(object):
     vertex_fill_color = DEFAULT_VERTEX_FILL_COLOR
     h_vertex_fill_color = DEFAULT_HVERTEX_FILL_COLOR
     point_type = P_ROUND
-    point_size = 16
-    scale = 1.0
-    label_font_size = 8
+    point_size = 8
+    scale = 2.0
+    label_font_size = 5
 
     def __init__(self, label=None, line_color=None, difficult=False, paint_label=False):
         self.label = label
@@ -90,6 +90,8 @@ class Shape(object):
             pen = QPen(color)
             # Try using integer sizes for smoother drawing(?)
             pen.setWidth(max(1, int(round(2.0 / self.scale))))
+            #---manual pen width setting
+            #pen,setWidth(2)
             painter.setPen(pen)
 
             line_path = QPainterPath()

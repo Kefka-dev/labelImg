@@ -80,6 +80,8 @@ def format_shortcut(text):
 
 
 def generate_color_by_text(text):
+    if(text == "person"):
+        return QColor(237, 9, 218, 155)
     s = ustr(text)
     hash_code = int(hashlib.sha256(s.encode('utf-8')).hexdigest(), 16)
     r = int((hash_code / 255) % 255)
