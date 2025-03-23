@@ -1,6 +1,7 @@
-About LabelImg
-========
+# About LabelImg
+
 since it is no longer maintened, I found out that it works most stable on python version 3.9.21
+========
 .. image:: https://img.shields.io/pypi/v/labelimg.svg
         :target: https://pypi.python.org/pypi/labelimg
 
